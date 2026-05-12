@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GeoLocation.MainPage"
+             Title="Share My Location">
+
+    <VerticalStackLayout Spacing="20" Padding="30" VerticalOptions="Center">
+
+        <!-- Title -->
+        <Label Text="📍 Share My Location"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <!-- Location Display Label -->
+        <Label x:Name="LocationLabel"
+               Text="Tap the button to get your location"
+               FontSize="16"
+               HorizontalOptions="Center"
+               TextColor="Gray" />
+
+        <!-- Share Button -->
+        <Button x:Name="ShareBtn"
+                Text="Share my Location"
+                Clicked="OnShareClicked"
+                BackgroundColor="Blue"
+                TextColor="White"
+                FontSize="18"
+                CornerRadius="10" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
