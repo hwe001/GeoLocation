@@ -76,4 +76,21 @@ public partial class MainPage : ContentPage
             await DisplayAlertAsync("Error", $"Failed to get location: {ex.Message}", "OK");
         }
     }
+
+
+    private async void OnInternetClicked(object sender, EventArgs e)
+    {
+        // Check internet connectivity
+        var current = Connectivity.Current;
+        var profiles = current.ConnectionProfiles;
+
+        if (current.NetworkAccess == NetworkAccess.Internet)
+        {
+            await DisplayAlertAsync("Internet Connection", "You are connected to the internet.", "OK");
+        }
+        else
+        {
+            await DisplayAlertAsync("No Internet", "You are not connected to the internet.", "OK");
+        }
+    }
 }

@@ -35,7 +35,14 @@
                        Tablet='Tablet View', 
                        Desktop='Desktop View'}" 
            HorizontalOptions="Center" />
-
+        <!-- Share Button -->
+        <Button x:Name="InternetBtn"
+               Text="Check my connection"
+               Clicked="OnInternetClicked"
+               BackgroundColor="DarkGreen"
+               TextColor="White"
+               FontSize="18"
+               CornerRadius="10" />
 
     </VerticalStackLayout>
 
