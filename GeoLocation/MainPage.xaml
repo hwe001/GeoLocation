@@ -28,6 +28,15 @@
                 FontSize="18"
                 CornerRadius="10" />
 
+        <Label Text="Welcome to my app!"
+       FontSize="{OnIdiom Phone=14, Tablet=24, Desktop=28}" />
+
+        <Label Text="{OnIdiom Phone='Mobile View', 
+                       Tablet='Tablet View', 
+                       Desktop='Desktop View'}" 
+           HorizontalOptions="Center" />
+
+
     </VerticalStackLayout>
 
 </ContentPage>
